@@ -1,0 +1,56 @@
+/* Global */
+.vheight-100 {
+    min-height: 100vh;
+}
+
+.below-nav {
+    padding-top: 5rem;
+}
+
+.form-inline{
+    margin-right: 100px !important;
+}
+
+/* Filters and projects */
+.list-group-item {
+    background-color: transparent;
+}
+
+.list-group-item.active {
+    background-color: #80898d;
+    border-color:transparent;
+}
+
+.list-group-item-action:hover {
+    background-color: #ffffff;
+    color: rgb(105, 105, 105);
+}
+
+.projects-title {
+    margin-top: 2rem;
+}
+
+/* Checkbox for important tasks */
+.custom-checkbox .custom-control-input.important~.custom-control-label::before{
+    border-color: red;
+}
+
+.custom-checkbox .custom-control-input.important:checked~.custom-control-label::before{
+    background-color: red;
+  }
+
+.custom-checkbox .custom-control-input.important:focus~.custom-control-label::before{
+    box-shadow:  0 0 0 0.2rem rgb(255, 148, 148);
+}
+
+/* Add task button */
+.fixed-right-bottom {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1030;
+    padding-top:5px;
+    padding-bottom: 10px;
+    margin: 20px;
+    border-radius: 50%;
+}
