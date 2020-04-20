@@ -1,56 +1,83 @@
-/* Global */
-.vheight-100 {
+.vheight{
     min-height: 100vh;
 }
 
-.below-nav {
-    padding-top: 5rem;
+.below{
+    padding-top:5rem;
 }
 
-.form-inline{
-    margin-right: 100px !important;
+#TodoIcon{
+    margin-right: 15px;
 }
 
-/* Filters and projects */
-.list-group-item {
+.navbar-brand{
+    font-family: 'Raleway' !important;
+    font-weight: 500;
+    font-size: 25px !important;
+    color: rgb(44, 48, 53) !important;
+}
+
+.navbar-light{
+    background-color: rgb(220, 232, 241) !important; 
+    padding-top: 10px;
+    padding-bottom: 13px;
+    margin-bottom: 15px;
+}
+
+input.form-control{
+    margin-top: 5px;
+    font-family: 'Raleway' !important;
+    border-radius: 20px;
+}
+
+h1,h6{
+    font-family: "Raleway";
+}
+
+.list-group-item{
     background-color: transparent;
+    color: slategray;
+    font-family: "Raleway";
 }
 
-.list-group-item.active {
-    background-color: #80898d;
-    border-color:transparent;
+.list-group-item.active{
+    background-color: #cdd1da;
+    border: none;
+    color: rgb(28, 32, 36);
 }
 
-.list-group-item-action:hover {
-    background-color: #ffffff;
-    color: rgb(105, 105, 105);
+.list-group-item:active{
+    background-color: rgb(229, 234, 245);
 }
 
-.projects-title {
-    margin-top: 2rem;
+.list-group-item-action:hover{
+    background-color: whitesmoke;
 }
 
-/* Checkbox for important tasks */
+.badge{
+    font-family: "Arial Nova";
+    font-size: 10px;
+}
+
 .custom-checkbox .custom-control-input.important~.custom-control-label::before{
-    border-color: red;
+    border-color: rgb(221, 80, 80);
 }
 
 .custom-checkbox .custom-control-input.important:checked~.custom-control-label::before{
-    background-color: red;
+    background-color: rgb(221, 80, 80);
   }
 
 .custom-checkbox .custom-control-input.important:focus~.custom-control-label::before{
     box-shadow:  0 0 0 0.2rem rgb(255, 148, 148);
 }
 
-/* Add task button */
-.fixed-right-bottom {
+#bottomBtn{
     position: absolute;
     right: 0;
     bottom: 0;
     z-index: 1030;
-    padding-top:5px;
-    padding-bottom: 10px;
-    margin: 20px;
+    padding: 4px 9pt 4px 9pt;
+    margin: 0 1.5rem 1.5rem 0;
     border-radius: 50%;
+    font-family: "Google Sans";
 }
